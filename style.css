@@ -1,0 +1,121 @@
+/* Custom CSS for smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* Navbar customization */
+nav {
+    background-color: #4A3F35; /* Dark brown background */
+}
+
+nav a {
+    color: #FFFFFF; /* White text color */
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile menu customization */
+#mobile-menu {
+    background-color: #4A3F35; /* Dark brown background */
+}
+
+#mobile-menu a {
+    color: #FFFFFF; /* White text color */
+}
+
+#mobile-menu a:hover {
+    color: #D4B99F; /* Light beige color on hover */
+}
+
+/* Hero section styling */
+#home {
+    position: relative;
+    color: #FFFFFF; /* White text color */
+}
+
+#home h1 {
+    font-size: 3rem; /* Responsive font size */
+}
+
+#home p {
+    font-size: 1.25rem;
+}
+
+/* Coffee carousel styling */
+.carousel-item {
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.carousel-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* About Us section styling */
+#about {
+    background-color: #F5F5F5; /* Light grey background */
+}
+
+#about p {
+    font-size: 1.125rem; /* Slightly larger text for readability */
+}
+
+/* Coffee Menu styling */
+#menu .bg-white {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#menu .bg-white:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact form styling */
+form input, form textarea {
+    border: 1px solid #E5E7EB; /* Light grey border */
+}
+
+form button {
+    background-color: #6D4C41; /* Medium brown */
+}
+
+form button:hover {
+    background-color: #5A3E2D; /* Darker brown on hover */
+}
+
+/* Footer styling */
+footer {
+    background-color: #4A3F35; /* Dark brown background */
+}
+
+footer a {
+    color: #FFFFFF; /* White text color */
+}
+
+footer a:hover {
+    color: #D4B99F; /* Light beige color on hover */
+}
+
+/* Map iframe styling */
+iframe {
+    border: 0;
+    border-radius: 0.5rem; /* Rounded corners */
+}
+/* Custom CSS for blur effect */
+.blur-image {
+    filter: blur(8px); /* Adjust the blur intensity */
+    opacity: 0.7; /* 70% opacity */
+    -webkit-filter: blur(8px); /* For Safari support */
+}
+
+/* Optional: Add a semi-transparent overlay to improve text readability */
+#home::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    z-index: 1; /* Make sure the overlay is below the text but above the blurred image */
+}
